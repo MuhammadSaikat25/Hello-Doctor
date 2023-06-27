@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="turbolinks-cache-control" content="no-cache">
+<meta name="p:domain_verify" content="2be5bc451d49e27dc536462be5b85680" />
+<title>Intercare - Medical Doctor Types</title>
+<meta name="description" content="Within the medical profession, the title of &quot;Doctor&quot; is one that is shared both by general practitioners and specialists in as many as 60 different fields.">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Rs9mjUhhVYahBnSGQnYoI+Du7FPOwUckMbxFlla0wf/U0YspyemuWArUssxyIyg0Ew2djp/CZ9Wa7tCLq1MNsQ==" />
+<link rel="stylesheet" media="all" href="/assets/application-483582df448586a150755be182f18323e3ead0ac1e2cda80c352ea0d00edcc31.css" data-turbolinks-track="reload" />
+<script src="/assets/application-01d2422d7670db9e6b9e52d42f30b5906ae0f973b5723df8b33a7dfeb0816bcb.js" data-turbolinks-track="reload"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3M4VFN');</script>
+
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1173820349440537');
+  fbq('init', '677589566919229');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" src="https://www.facebook.com/tr?id=1173820349440537&ev=PageView&noscript=1"/>
+  <img height="1" width="1" src="https://www.facebook.com/tr?id=677589566919229&ev=PageView&noscript=1"/>
+</noscript>
+
+
+<script data-turbolinks-track="reload">
+
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {hjid: 2592780, hjsv: 6};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.setAttribute("data-turbolinks-track","reload");
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+</head>
+<body class="whiteBG body-padding">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3M4VFN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<div id="mySidenav" class="sidenav">
+<div class="close-nav-container">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="float: right;">&times;</a>
+</div>
+<ul class="sidenav-list xs-mt-40 xs-mb-60">
+<a href="/bookings"><li class="mobile-book-now">Book now</li></a>
+<li class=""><a href="https://healthbeat.intercare.co.za/register">HealthBeat Sign Up</a></li>
+<li class=""><a href="https://healthbeat.intercare.co.za/login">HealthBeat Log In</a></li>
+<a href="/find"><li><span>Find</span></li></a>
+<li><h4>Services</h4></li>
+<a href="/services/medical"><li class="nav-services">Medical</li></a>
+<a href="/services/dental"><li class="nav-services">Dental</li></a>
+<a href="/services/virtual"><li class="nav-services">Virtual</li></a>
+<a href="/services/sub-acute-rehabilitation-hospitals"><li class="nav-services">Sub-acute Rehabilitation Hospitals</li></a>
+<a href="/services/day-hospitals"><li class="nav-services">Day Hospitals</li></a>
+<a href="/services/intercare-medfem-hospital"><li class="nav-services">Intercare Medfem Hospital</li></a>
+<a class="dropdown-item" href="https://www.intercare.co.za/specialised-services/womens-health">Special Interest Services</a>
+<a href="/facilities"><li>Facilities</li></a>
+<a href="https://healthhub.intercare.co.za/?utm_source=intercare"><li>Health Hub</li></a>
+<a href="/careers"><li>Careers</li></a>
+<a href="/share-your-experience"><li>Share your experience</li></a>
+</ul>
+</div>
+<nav class="navbar navbar-default navbar-expand-xl navbar-light fixed-top bg-light navbar-border whiteBG">
+<div class="nav-container mx-auto">
+<a class="navbar-brand mx-xl-auto" href="/">
+<img class="Intercare. Leaders in health" src="/assets/logo-intercare-color-1089ec582102f3ee6959dc01b3bd9d2e07e550ce86a12090ef0f899148eee5bb.svg" />
+</a>
+<button class="navbar-toggler custom-toggler scrolled" onclick="openNav()">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item line-hover-application">
+<a class="nav-link" href="/find">Find</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle nav-link <!--<=current_class?(service_path)%>-->" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Services
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/services/medical">Medical</a>
+<a class="dropdown-item" href="/services/dental">Dental</a>
+<a class="dropdown-item" href="/services/virtual">Virtual</a>
+<a class="dropdown-item" href="/services/sub-acute-rehabilitation-hospitals">Sub-acute Rehabilitation Hospitals</a>
+<a class="dropdown-item" href="/services/day-hospitals">Day Hospitals</a>
+<a class="dropdown-item" href="/services/intercare-medfem-hospital">Intercare Medfem Hospital</a>
+<a class="dropdown-item" href="https://www.intercare.co.za/specialised-services/womens-health">Special Interest Services</a>
+</div>
+</li>
+<li class="nav-item line-hover-application">
+<a class="nav-link" href="/facilities">Facilities</a>
+</li>
+<li class="nav-item line-hover-application">
+<a class="nav-link" href="https://healthhub.intercare.co.za/?utm_source=intercare">Health Hub</a>
+</li>
+<li class="nav-item line-hover-application">
+<a class="nav-link" href="/careers">Careers</a>
+</li>
+<li class="nav-item line-hover-application">
+<a class="nav-link" href="/share-your-experience">Share Your Experience</a>
+</li>
+<li class="nav-item">
+<a class="btn btn-outline-primary" href="https://healthbeat.intercare.co.za/guest/create">Book Now</a>
+</li>
+<li class="nav-item">
+</li>
+</ul>
+<ul class="nav">
+<li class="nav-item">
+<a class="nav-link  sign-up" href="https://healthbeat.intercare.co.za/register">Sign Up</a>
+</li>
+<li class="nav-item">
+<a class="btn btn-secondary" href="https://healthbeat.intercare.co.za/login">Log In</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container xs-mb-50">
+<div class="row">
+<div class="col-md-10 col-lg-10 mx-auto first-header-margin">
+<h1>
+Medical Doctor Types
+</h1>
+<p class="xs-mt-30">
+<h2><img src="https://s3-eu-west-1.amazonaws.com/intercare-web-public/wysiwyg-uploads%2F1569586526901-doctor.jpg" style="width: 100%px;" class="fr-fic fr-dib"></h2><h2><br></h2><h2>There Are Around 60 Types of Medical Doctor</h2><p>Apart from the fact that &ldquo;doctor&rdquo; is a title shared by members of the clergy and anyone with an appropriate postgraduate qualification, within the medical profession, the title is one that is further shared both by general practitioners and specialists in as many as 60 different fields. These include better-known specialities such as paediatrics, obstetrics, cosmetic surgery, and oncology, as well as a number of relatively new fields such as assisted human reproduction, organ transplantation, and gene therapy. In addition, one can find physicians who devote their careers to activities such as the management of pain and the treatment of sleep disorders, while others choose to work with police forces to provide them with forensic services.</p><p>Discounting those who may have earned a PhD in astrophysics, theology, or pre-Columbian art, doctor is the title most often shared by those individuals with a medical degree who have received the necessary training and are registered to care for our health. They may be employed either by the state or by a private healthcare institution or they may choose to practice independently.</p><p>For most people, however, the term is the honorific with which they address their general practitioner or GP. This is the type of physician responsible for dispensing primary care to patients within the area surrounding a practice. More recently, however, it has become common practice to include access to a family doctor along with the other services provided by some of the larger medical centres in South Africa.</p><p>In this environment, they can dispense primary care whilst enjoying access to certain facilities such as X-ray equipment and laboratory services not normally available at a small private practice. In addition, because the premises are often shared by a number of other medical specialists, it can be simpler and quicker for a GP to obtain a more informed second opinion and to make a referral, should it be necessary.</p><p>One curious anomaly applies to the use of this title. Until the introduction of degree courses, surgeons served an apprenticeship and, on completing a diploma, were not actually entitled to call themselves doctor. Today, despite holding a medical degree, surgeons in Britain maintain this distinction and still choose to be referred to as Mr, Mrs, Miss or Ms, yet wear these lesser titles with obvious professional pride.</p><p>Our health and that of our loved ones are important. It is, therefore, fortunate that we all have access to a doctor with the knowledge, skills, and experience to attend to the many illnesses and injuries that could threaten that health. And you can book an appointment with one easily via Intercare&rsquo;s convenient online booking system.</p>
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-10 col-lg-10 xs-mt-80 mx-auto">
+<a href="/articles">
+<div class="card hover-grow">
+<div class="card-body">
+<h3 class="xs-ml-20">Blog</h3>
+<p class="xs-ml-20">Keep up to date with medical related articles by reading our blogs.</p>
+<a class="xs-mt-0 xs-ml-20" href="/articles">Read more articles</a>
+</div>
+</div>
+</a> </div>
+</div>
+</div>
+<div class="container-fluid footer-container">
+<div class="container">
+<footer>
+<div class="row">
+<div class="col-md-3 col-sm-12">
+
+<div class="widget d-none d-md-block">
+<h3 class="footer-link">Services</h3>
+<ul class="list-unstyled text-small">
+<li><a class="footer-link" href="/services/medical">Medical</a></li>
+
+<li><a class="footer-link" href="/services/dental">Dental</a></li>
+
+<li><a class="footer-link" href="/services/virtual">Virtual</a></li>
+
+<li><a class="footer-link" href="/services/sub-acute-rehabilitation-hospitals">Sub-acute Rehabilitation Hospitals</a></li>
+
+<li><a class="footer-link" href="/services/day-hospitals">Day Hospitals</a></li>
+
+<li><a class="footer-link" href="/services/intercare-medfem-hospital">Intercare Medfem Hospital</a></li>
+
+</ul>
+</div>
+
+<div id="accordion" role="tablist" aria-multiselectable="true" class="widget d-block d-md-none accordionBorder">
+<div role="tab" id="headingOne">
+<div class="card-header py-3 border-0">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+Services</a>
+</div>
+</div>
+<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+<div class="card-block">
+<ul class="footer-accordion-list list-unstyled text-small">
+<li><a class="footer-link" href="/services/medical">Medical</a></li>
+
+<li><a class="footer-link" href="/services/dental">Dental</a></li>
+
+<li><a class="footer-link" href="/services/virtual">Virtual</a></li>
+
+<li><a class="footer-link" href="/services/sub-acute-rehabilitation-hospitals">Sub-acute Rehabilitation Hospitals</a></li>
+
+<li><a class="footer-link" href="/services/day-hospitals">Day Hospitals</a></li>
+
+<li><a class="footer-link" href="/services/intercare-medfem-hospital">Intercare Medfem Hospital</a></li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-12">
+
+<div class="widget d-none d-md-block">
+<h3 class="footer-link">Find an Intercare</h3>
+<ul class="list-unstyled text-small">
+<li>
+<a class="footer-link" href="/facilities?province=eastern-cape">Eastern Cape</a>
+</li>
+<li>
+<a class="footer-link" href="/facilities?province=gauteng">Gauteng</a>
+</li>
+<li>
+<a class="footer-link" href="/facilities?province=kwazulu-natal">KwaZulu-Natal</a>
+</li>
+<li>
+<a class="footer-link" href="/facilities?province=western-cape">Western Cape</a>
+</li>
+</ul>
+</div>
+
+<div id="accordion" role="tablist" aria-multiselectable="true" class="widget d-block d-md-none accordionBorder">
+<div role="tab" id="headingOne">
+<h3 class="card-header py-3 border-0">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+Find an Intercare</a>
+</h3>
+</div>
+<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+<div class="card-block">
+<ul class="footer-accordion-list list-unstyled text-small">
+<li>
+<a class="footer-link" href="/facilities?province=eastern-cape">Eastern Cape</a>
+</li>
+<li>
+<a class="footer-link" href="/facilities?province=gauteng">Gauteng</a>
+</li>
+<li>
+<a class="footer-link" href="/facilities?province=kwazulu-natal">KwaZulu-Natal</a>
+</li>
+<li>
+<a class="footer-link" href="/facilities?province=western-cape">Western Cape</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-12">
+
+<div class="widget d-none d-md-block">
+<h3 class="footer-link">About Intercare</h3>
+<ul class="list-unstyled text-small">
+<li><a class="footer-link" href="/about">Company</a></li>
+<li>
+<a class="footer-link" href="/facilities">Facilities</a>
+</li>
+<li>
+<a class="footer-link" href="/privacy-policy">Privacy Policy</a>
+</li>
+<li>
+<a class="footer-link" href="/terms-and-conditions">Terms and Conditions</a>
+</li>
+</ul>
+</div>
+
+<div id="accordion" role="tablist" aria-multiselectable="true" class="widget d-block d-md-none accordionBorder">
+<div role="tab" id="headingOne">
+<h3 class="card-header py-3 border-0">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+About Intercare</a>
+</h3>
+</div>
+<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+<div class="card-block">
+<ul class="footer-accordion-list list-unstyled text-small">
+<li><a class="footer-link" href="/about">Company</a></li>
+<li>
+<a class="footer-link" href="/facilities">Facilities</a>
+</li>
+<li>
+<a class="footer-link" href="/privacy-policy">Privacy Policy</a>
+</li>
+<li>
+<a class="footer-link" href="/popia-act">POPIA</a>
+</li>
+<li>
+<a class="footer-link" href="/terms-and-conditions">Terms and Conditions</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="borderTop">
+<div class="container footer-copyright">
+<div class="row">
+<div class="col-md-6 copyright">
+<p>Copyright &copy; 2019 Intercare. All rights reserved. | <a class="footer-link" href="/paia-information">PAIA Information</a></p>
+</div>
+<div class="col-md-6">
+<ul class="footer-social">
+<li class="hover-grow">
+<a href="https://www.instagram.com/intercare_/?hl=en" target="_blank">
+<i class="fab fa-instagram fa-lg hover-grow"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/company/intercare-managed-healthcare-pty-ltd---shared-services/" target="_blank">
+<i class="fab fa-linkedin-in fa-lg hover-grow"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/intercaregroupsa/" target="_blank">
+<i class="fab fa-facebook-f fa-lg hover-grow"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript"> _linkedin_partner_id = "4423457";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script>
+<script type="text/javascript"> (function (l) {
+      if (!l) {
+          window.lintrk = function (a, b) {
+              window.lintrk.q.push([a, b])
+          };
+          window.lintrk.q = []
+      }
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";
+      b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+  })(window.lintrk); </script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4423457&fmt=gif"/>
+  </noscript>
+
+
+<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" data-language="en" type="text/javascript" charset="UTF-8" data-domain-script="6b43befb-e924-4d46-949c-c741a80e171b"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+</script>
+
+<script type="text/javascript" src=https://vmo189.infusionsoft.app/app/webTracking/getTrackingCode></script>
+</body>
+</html>
