@@ -8,7 +8,7 @@ import { useState } from 'react';
 const Nav = () => {
     const [open, setOpen] = useState(false)
     return (
-        <nav className='max-w-7xl mx-auto w-full bg-gray-700 '>
+        <nav className=' bg-gray-700 '>
             <div className=" flex justify-between items-center p-5">
                 <h1 className='font-semibold'><span className='text-red-500'>DOC</span> <span className='text-white'>House</span></h1>
                 <div className="lg:flex text-white gap-10 hidden">
