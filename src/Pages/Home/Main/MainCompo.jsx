@@ -7,7 +7,7 @@ const MainCompo = () => {
     const [selectCategory, setSelectCategory] = useState('Periodontics')
     const findIng = category.filter(item => item.name === selectCategory)
     useEffect(() => {
-        axios.get(`${import.meta.env.VITE_SERVER}category`)
+        axios.get(`${import.meta.env.VITE_SERVER}services`)
             .then(res => {
                 const data = res.data
                 setCategory(data)
@@ -15,9 +15,9 @@ const MainCompo = () => {
 
     }, [])
     return (
-        <div className='lg:flex  mb-30'>
+        <div className='lg:flex  mb-30 mt-10'>
             <div className="">
-                <img className='h-[580px] w-[500px] object-fill' src={img} alt="" />
+                <img className='h-[580px] w-[65s0px] object-fill' src={img} alt="" />
             </div>
 
             {/* =================================== */}
@@ -35,7 +35,7 @@ const MainCompo = () => {
                     {
                         findIng.map(item => <div key={item._id}>
                             <img className='w-[400px] h-[400px] rounded object-contain' src={item.image} alt="" />
-                            <h1>{item.details}</h1>
+                            <h1>{item.description}</h1>
                         </div>)
                     }
                 </div>

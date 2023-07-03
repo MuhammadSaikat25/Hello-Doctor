@@ -1,7 +1,7 @@
 import { BiBeenHere } from "react-icons/bi";
 const Time = () => {
     return (
-        <div className="lg:flex justify-between items-center mt-10">
+        <div className="lg:flex justify-around items-center mt-10">
             <div className="bg-black text-gray-200 p-5 rounded-md">
                 <h1 className="font-bold">Opening Hour</h1>
                 <h1>Open 9.00 am to 5.00pm <br /> Everyday</h1>

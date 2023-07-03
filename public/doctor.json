@@ -1,0 +1,303 @@
+[
+    {
+      "name": "Dr. Emily Anderson",
+      "image": "https://example.com/doctor1.jpg",
+      "education": "DDS, University of Dental Sciences",
+      "services": ["Periodontics", "Endodontics", "Orthodontics", "Prosthodontics", "Pediatric Dentistry", "Oral Surgery", "General Dentistry"],
+      "awards": ["Best Dentist Award 2022", "Excellence in Dental Care 2021"],
+      "specializations": ["Orthodontics", "Pediatric Dentistry"],
+      "businessHours": {
+        "Monday": "9:00 AM - 5:00 PM",
+        "Tuesday": "9:00 AM - 5:00 PM",
+        "Wednesday": "9:00 AM - 12:00 PM",
+        "Thursday": "9:00 AM - 5:00 PM",
+        "Friday": "9:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$150",
+      "reviews": [
+        {
+          "name": "John Smith",
+          "rating": 4.5,
+          "comment": "Dr. Anderson is very professional and caring. I highly recommend her."
+        },
+        {
+          "name": "Jane Johnson",
+          "rating": 5,
+          "comment": "Great experience! Dr. Anderson made me feel comfortable throughout the entire treatment."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Michael Roberts",
+      "image": "https://example.com/doctor2.jpg",
+      "education": "DMD, University of Dental Medicine",
+      "services": ["Orthodontics", "Prosthodontics", "Pediatric Dentistry", "General Dentistry"],
+      "awards": ["Top Dentist Award 2021", "Outstanding Dental Care 2020"],
+      "specializations": ["Prosthodontics", "General Dentistry"],
+      "businessHours": {
+        "Monday": "8:30 AM - 6:00 PM",
+        "Tuesday": "8:30 AM - 6:00 PM",
+        "Wednesday": "Closed",
+        "Thursday": "8:30 AM - 6:00 PM",
+        "Friday": "8:30 AM - 12:30 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$200",
+      "reviews": [
+        {
+          "name": "Sarah Thompson",
+          "rating": 4,
+          "comment": "Dr. Roberts did a fantastic job with my braces. I'm extremely satisfied."
+        },
+        {
+          "name": "David Wilson",
+          "rating": 4.5,
+          "comment": "Professional and friendly staff. Dr. Roberts is highly skilled."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Jennifer Lee",
+      "image": "https://example.com/doctor3.jpg",
+      "education": "DDS, College of Dental Medicine",
+      "services": ["Periodontics", "Orthodontics", "Prosthodontics", "Oral Surgery", "General Dentistry"],
+      "awards": ["Excellence in Dentistry Award 2023", "Dental Innovator of the Year 2022"],
+      "specializations": ["Periodontics", "Oral Surgery"],
+      "businessHours": {
+        "Monday": "9:00 AM - 5:00 PM",
+        "Tuesday": "9:00 AM - 5:00 PM",
+        "Wednesday": "9:00 AM - 5:00 PM",
+        "Thursday": "Closed",
+        "Friday": "9:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$180",
+      "reviews": [
+        {
+          "name": "Emily Davis",
+          "rating": 5,
+          "comment": "Dr. Lee performed a successful oral surgery on me. I'm grateful for her expertise."
+        },
+        {
+          "name": "Mark Johnson",
+          "rating": 4.5,
+          "comment": "Excellent periodontal care. Highly recommended."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Sarah Thompson",
+      "image": "https://example.com/doctor4.jpg",
+      "education": "DDS, School of Dentistry",
+      "services": ["Periodontics", "Prosthodontics", "Pediatric Dentistry", "Oral Surgery", "General Dentistry"],
+      "awards": ["Best Dental Specialist 2020", "Outstanding Oral Health Care 2019"],
+      "specializations": ["Pediatric Dentistry", "General Dentistry"],
+      "businessHours": {
+        "Monday": "9:00 AM - 6:00 PM",
+        "Tuesday": "9:00 AM - 6:00 PM",
+        "Wednesday": "Closed",
+        "Thursday": "9:00 AM - 6:00 PM",
+        "Friday": "Closed",
+        "Saturday": "9:00 AM - 12:00 PM",
+        "Sunday": "Closed"
+      },
+      "price": "$160",
+      "reviews": [
+        {
+          "name": "Jessica Parker",
+          "rating": 5,
+          "comment": "Dr. Thompson is amazing with kids. My children love going to the dentist now."
+        },
+        {
+          "name": "Ryan Adams",
+          "rating": 4.5,
+          "comment": "Very friendly and professional staff. Dr. Thompson provides excellent care."
+        }
+      ]
+    },
+    {
+      "name": "Dr. William Davis",
+      "image": "https://example.com/doctor5.jpg",
+      "education": "DMD, Dental School",
+      "services": ["Orthodontics", "Prosthodontics", "Pediatric Dentistry", "General Dentistry"],
+      "awards": ["Top Dental Specialist 2022", "Excellence in Oral Care 2021"],
+      "specializations": ["Orthodontics", "Prosthodontics"],
+      "businessHours": {
+        "Monday": "8:00 AM - 4:30 PM",
+        "Tuesday": "8:00 AM - 4:30 PM",
+        "Wednesday": "Closed",
+        "Thursday": "8:00 AM - 4:30 PM",
+        "Friday": "Closed",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$190",
+      "reviews": [
+        {
+          "name": "Michelle Sanders",
+          "rating": 4,
+          "comment": "Dr. Davis did a great job with my braces. I'm happy with the results."
+        },
+        {
+          "name": "Robert Wilson",
+          "rating": 4.5,
+          "comment": "Excellent service. Dr. Davis is very knowledgeable and skilled."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Laura Hernandez",
+      "image": "https://example.com/doctor6.jpg",
+      "education": "DDS, Dental College",
+      "services": ["Endodontics", "Orthodontics", "Pediatric Dentistry", "General Dentistry"],
+      "awards": ["Best Endodontist 2023", "Outstanding Dental Care 2022"],
+      "specializations": ["Endodontics", "Orthodontics"],
+      "businessHours": {
+        "Monday": "9:00 AM - 5:00 PM",
+        "Tuesday": "9:00 AM - 5:00 PM",
+        "Wednesday": "9:00 AM - 1:00 PM",
+        "Thursday": "9:00 AM - 5:00 PM",
+        "Friday": "9:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$170",
+      "reviews": [
+        {
+          "name": "Sarah Brown",
+          "rating": 5,
+          "comment": "Dr. Hernandez is an exceptional endodontist. I had a painless root canal procedure."
+        },
+        {
+          "name": "Jason Clark",
+          "rating": 4.5,
+          "comment": "Friendly and professional staff. Dr. Hernandez provides excellent care."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Daniel Wilson",
+      "image": "https://example.com/doctor7.jpg",
+      "education": "DMD, School of Dentistry",
+      "services": ["Periodontics", "Orthodontics", "Prosthodontics", "General Dentistry"],
+      "awards": ["Top Dentist 2021", "Excellence in Dental Care 2020"],
+      "specializations": ["Periodontics", "General Dentistry"],
+      "businessHours": {
+        "Monday": "8:30 AM - 5:30 PM",
+        "Tuesday": "8:30 AM - 5:30 PM",
+        "Wednesday": "Closed",
+        "Thursday": "8:30 AM - 5:30 PM",
+        "Friday": "Closed",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$160",
+      "reviews": [
+        {
+          "name": "Emily Miller",
+          "rating": 4,
+          "comment": "Dr. Wilson provided me with excellent periodontal treatment. Highly recommended."
+        },
+        {
+          "name": "Matthew Harris",
+          "rating": 4.5,
+          "comment": "Professional and friendly staff. Dr. Wilson is a skilled dentist."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Olivia Green",
+      "image": "https://example.com/doctor8.jpg",
+      "education": "DDS, Dental University",
+      "services": ["Periodontics", "Prosthodontics", "Oral Surgery", "General Dentistry"],
+      "awards": ["Best Oral Surgeon 2022", "Outstanding Dental Specialist 2021"],
+      "specializations": ["Oral Surgery", "General Dentistry"],
+      "businessHours": {
+        "Monday": "9:00 AM - 6:00 PM",
+        "Tuesday": "9:00 AM - 6:00 PM",
+        "Wednesday": "9:00 AM - 6:00 PM",
+        "Thursday": "Closed",
+        "Friday": "9:00 AM - 6:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$180",
+      "reviews": [
+        {
+          "name": "Andrew Thompson",
+          "rating": 5,
+          "comment": "Dr. Green performed a successful oral surgery on me. I'm very satisfied."
+        },
+        {
+          "name": "Linda Turner",
+          "rating": 4.5,
+          "comment": "Excellent oral care. Dr. Green is highly skilled and caring."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Nathan Carter",
+      "image": "https://example.com/doctor9.jpg",
+      "education": "DMD, Dental School",
+      "services": ["Endodontics", "Orthodontics", "Pediatric Dentistry", "General Dentistry"],
+      "awards": ["Top Dental Specialist 2023", "Excellence in Dental Care 2022"],
+      "specializations": ["Endodontics", "Orthodontics"],
+      "businessHours": {
+        "Monday": "8:00 AM - 4:30 PM",
+        "Tuesday": "8:00 AM - 4:30 PM",
+        "Wednesday": "Closed",
+        "Thursday": "8:00 AM - 4:30 PM",
+        "Friday": "Closed",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$170",
+      "reviews": [
+        {
+          "name": "Jennifer Scott",
+          "rating": 4,
+          "comment": "Dr. Carter provided me with excellent orthodontic care. I'm happy with the results."
+        },
+        {
+          "name": "Michael Brown",
+          "rating": 4.5,
+          "comment": "Friendly and professional staff. Dr. Carter is a skilled dentist."
+        }
+      ]
+    },
+    {
+      "name": "Dr. Sophia Adams",
+      "image": "https://example.com/doctor10.jpg",
+      "education": "DDS, Dental College",
+      "services": ["Orthodontics", "Pediatric Dentistry", "General Dentistry"],
+      "awards": ["Best Dentist 2021", "Outstanding Dental Care 2020"],
+      "specializations": ["Orthodontics", "Pediatric Dentistry"],
+      "businessHours": {
+        "Monday": "9:00 AM - 5:00 PM",
+        "Tuesday": "9:00 AM - 5:00 PM",
+        "Wednesday": "9:00 AM - 12:00 PM",
+        "Thursday": "9:00 AM - 5:00 PM",
+        "Friday": "9:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "price": "$150",
+      "reviews": [
+        {
+          "name": "Amy Wilson",
+          "rating": 5,
+          "comment": "Dr. Adams is excellent with children. She made my child's dental visit enjoyable."
+        },
+        {
+          "name": "David Roberts",
+          "rating": 4.5,
+          "comment": "Great experience! Dr. Adams is knowledgeable and caring."
+        }
+      ]
+    }
+  ]
+  
