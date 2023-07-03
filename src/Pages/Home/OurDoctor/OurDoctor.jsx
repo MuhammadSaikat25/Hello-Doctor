@@ -13,7 +13,7 @@ const OurDoctor = () => {
             })
 
     }, [])
-    console.log(doctor)
+    
     return (
         <div className="mt-10">
             <div className="mb-10 mt10  text-center">
