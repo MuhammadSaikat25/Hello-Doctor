@@ -6,7 +6,7 @@ import { AuthContext } from './FireBase/AuthProvider';
 
 const SingUp = () => {
 
-    const { createUser } = useContext(AuthContext)
+    const { createUser,update } = useContext(AuthContext)
     const navigate=useNavigate()
 
 
@@ -17,7 +17,25 @@ const SingUp = () => {
         const password = e.target.password.value
         createUser(email, password)
             .then(res =>{
-                navigate('/')
+              update(name)
+                    .then(res=>{
+                        console.log(res)
+                        const obj={
+                            name,
+                            email
+                        }
+                        fetch(`${import.meta.env.VITE_SERVER}user`,{
+                            method:"POST",
+                            headers:{
+                                'content-type':'application/json'
+                            },
+                            body:JSON.stringify(obj)
+                        })
+                        .then(res=>res.json())
+                        .then(data=>console.log(data))
+                        navigate('/')
+                    })
+                    .catch(error=>{})
             })
             .catch(error => console.log(error.message))
     }
@@ -47,6 +65,7 @@ const SingUp = () => {
                                 <input className='border w-full p-2 rounded-md' type="password" name='password' placeholder='Password' />
                             </div>
                         </div>
+                        
                         <button className='bg-blue-700 p-1  text-white font-bold w-full rounded-md'>Create Account</button>
                         <h1 className='font-bold'>Already registered? Go to <span className='text-red-500'><Link to={'/logIn'}>SIGN IN</Link></span></h1>
                     </div>
