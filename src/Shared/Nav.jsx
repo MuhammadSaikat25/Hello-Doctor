@@ -22,13 +22,17 @@ const Nav = () => {
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/'}>Home</NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/about'}>About</NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/Appointment'}>Appointment</NavLink>
-                    {/* <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/logIn'}>LogIn</NavLink> */}
+                    {
+                        user && <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/profile'}>Profile</NavLink>
+                    }
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/SingUp'}>Sing up</NavLink>
                     {
                         user ? <button onClick={logOut}>log Out</button> : <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/logIn'}>LogIn</NavLink>
 
                     }
+
                 </div>
+                {/* mobile navbar */}
                 <div className="lg:hidden">
                     {
                         <span onClick={() => setOpen(!open)}>
@@ -45,7 +49,9 @@ const Nav = () => {
                             <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/'}>Home</NavLink>
                             <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/about'}>About</NavLink>
                             <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/Appointment'}>Appointment</NavLink>
-                            {/* <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/logIn'}>LogIn</NavLink> */}
+                            {
+                                user && <NavLink to={'/profile'}>Profile</NavLink>
+                            }
                             <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/SingUp'}>Sing up</NavLink>
                             {
                                 user ? <button onClick={logOut}>log Out</button> : <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/logIn'}>LogIn</NavLink>
@@ -56,10 +62,6 @@ const Nav = () => {
                 }
 
             </div>
-            <div className="">
-
-            </div>
-
         </nav>
     );
 };

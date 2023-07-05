@@ -14,6 +14,15 @@ import SingUp from './Component/SingUp';
 import PrivateRoute from './Component/FireBase/PrivateRoute';
 import ErrorPage from './Pages/Error/ErrorPage';
 import Appointment from './Component/FireBase/Appoinment/Appointment';
+import Profile from './Pages/Pofile/Profile';
+import AllUser from './Pages/ProfilePage/AllUser';
+import AddDoctor from './Pages/ProfilePage/AddDoctor';
+import ManageUser from './Pages/ProfilePage/ManageUser';
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
   {
@@ -30,8 +39,8 @@ const router = createBrowserRouter([
         element: <About></About>
       },
       {
-        path:'Appointment',
-        element:<Appointment></Appointment>
+        path: 'Appointment',
+        element: <Appointment></Appointment>
       }
 
 
@@ -46,6 +55,24 @@ const router = createBrowserRouter([
     path: "SingUp",
     element: <SingUp></SingUp>
   },
+  {
+    path: 'profile',
+    element: <Profile></Profile>,
+    children: [
+      {
+        path: 'allUser',
+        element: <AllUser></AllUser>
+      },
+      {
+        path: 'addDoctor',
+        element: <AddDoctor></AddDoctor>
+      },
+      {
+        path: 'manageUser',
+        element: <ManageUser></ManageUser>
+      }
+    ]
+  }
 
 ]);
 
@@ -53,7 +80,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
   <div className="max-w-7xl mx-auto w-full">
     <AuthProvider>
-      <RouterProvider router={router} />
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
     </AuthProvider>
   </div>
   // </React.StrictMode>, 

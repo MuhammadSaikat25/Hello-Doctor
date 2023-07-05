@@ -5,13 +5,14 @@ import { AuthContext } from '../../Component/FireBase/AuthProvider';
 
 
 const LogIn = () => {
+    
     const {LogIn}=useContext(AuthContext)
     const navigate=useNavigate()
+
     const handelLog=e=>{
         e.preventDefault()
         const email=e.target.email.value 
         const password=e.target.password.value 
-        console.log(email,password)
         LogIn(email,password)
             .then(res=>{
                 navigate('/')

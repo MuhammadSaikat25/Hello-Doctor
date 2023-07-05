@@ -24,7 +24,6 @@ const Appointment = () => {
 
     }, [])
 
-    console.log(servicesDoctor)
     return (
         <div className=''>
             {/* image and date */}
