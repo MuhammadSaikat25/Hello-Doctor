@@ -1,63 +1,63 @@
 import { createContext, useEffect, useState } from "react";
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,onAuthStateChanged,GoogleAuthProvider,updateProfile } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, updateProfile } from "firebase/auth";
 import app from "./fireBase";
 import axios from "axios";
-import { data } from "autoprefixer";
 
-export const AuthContext=createContext(null)
-const AuthProvider = ({children}) => {
-    const googleProvider=new GoogleAuthProvider();
-    const [user,setUser]=useState(null)
-    const auth=getAuth(app)
-    const [loading,setLoading]=useState(true)
-    // create user
-    const createUser=(email,password)=>{
+export const AuthContext = createContext(null)
+const AuthProvider = ({ children }) => {
+    const googleProvider = new GoogleAuthProvider();
+    const [user, setUser] = useState(null)
+    const auth = getAuth(app)
+    const [loading, setLoading] = useState(true)
+
+
+    const createUser = (email, password) => {
         setLoading(true)
-       return createUserWithEmailAndPassword(auth,email,password)
+        return createUserWithEmailAndPassword(auth, email, password)
     }
-    const LogIn=(email,password)=>{
+    const LogIn = (email, password) => {
         setLoading(true)
-       return signInWithEmailAndPassword(auth,email,password)
+        return signInWithEmailAndPassword(auth, email, password)
     }
-    const LogOut=()=>{
-      return  signOut(auth)
+    const LogOut = () => {
+        return signOut(auth)
     }
-   
-    const google=()=>{
-     return   signInWithPopup(auth,googleProvider)
+
+    const google = () => {
+        return signInWithPopup(auth, googleProvider)
     }
-    const update=(name)=>{
-        return updateProfile(auth.currentUser,{
+    const update = (name) => {
+        return updateProfile(auth.currentUser, {
             displayName: name
         })
     }
     console.log(user)
-    useEffect(()=>{
-        const unSubscribe=onAuthStateChanged(auth,currentUser=>{
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
-            if(currentUser){
+            if (currentUser) {
 
-                axios.post(`${import.meta.env.VITE_SERVER}jwt`,{email:currentUser.email})
-                .then(data=>{
-                    localStorage.setItem('jwt-token',data.data)
-                })
+                axios.post(`${import.meta.env.VITE_SERVER}jwt`, { email: currentUser.email })
+                    .then(data => {
+                        localStorage.setItem('jwt-token', data.data)
+                    })
                 setLoading(false)
-            }else{
+            } else {
                 localStorage.removeItem('jwt-token')
             }
         })
-        return ()=>{
+        return () => {
             unSubscribe()
         }
     })
 
-    const authInfo={
-        createUser,LogIn,LogOut,user,loading,google,update
+    const authInfo = {
+        createUser, LogIn, LogOut, user, loading, google, update
     }
     return (
-       <AuthContext.Provider value={authInfo}>
+        <AuthContext.Provider value={authInfo}>
             {children}
-       </AuthContext.Provider>
+        </AuthContext.Provider>
     );
 };
 

@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../../Component/FireBase/AuthProvider';
 
 const ProfileNav = () => {
-    const admin = true
+    const {user}=useContext(AuthContext)
+    
+    const isAdmin=()=>{
+        axiosSec.get(`user/admin/${user?.email}`)
+            .then(res=>{
+                return res.data.admin
+            })
+    }
+    const admin = isAdmin
+   
+
     return (
         <div>
             {
@@ -15,7 +26,7 @@ const ProfileNav = () => {
                 :
                 <div><NavLink className={`text-center`}>a</NavLink></div>
            }
-            <div className=""></div>
+            
         </div>
     );
 };

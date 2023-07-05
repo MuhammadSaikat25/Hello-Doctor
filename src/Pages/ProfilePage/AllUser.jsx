@@ -21,7 +21,7 @@ const AllUser = () => {
             .then(res => res.json())
             .then(data => console.log(data))
     }
-    console.log(user)
+    
     return (
         <div className='mt-10 '>
             {

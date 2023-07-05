@@ -10,6 +10,7 @@ const AxiosSecure = () => {
     const axiosSecure=axios.create({
         baseURL:`${import.meta.env.VITE_SERVER}`
     })
+    
     useEffect(()=>{
         axiosSecure.interceptors.request.use((config)=>{
             const token=localStorage.getItem('jwt-token')
