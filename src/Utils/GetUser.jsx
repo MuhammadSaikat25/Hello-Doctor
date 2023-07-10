@@ -7,7 +7,7 @@ const GetUser = () => {
     const axiosSec=AxiosSecure()
     useEffect(()=>{
         axiosSec.get(`user/${user?.email}`)
-           
+           .then(res=>console.log(res))
     })
     return (
         <div>
