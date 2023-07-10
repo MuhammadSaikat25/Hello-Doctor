@@ -41,15 +41,7 @@ const BookAppointment = ({ data }) => {
             <h1>{data.price}</h1>
             <h1 className='font-bold'>{data.services}</h1>
             <hr />
-            <span>
-                {
-                    Object.keys(data.businessHours).map((key, i) => (
-                        <h3 key={i} className="space-y-10"><span className="font-semibold">{key}</span> : {data.businessHours[key]}</h3>
-                    ))
-
-                }
-            </span>
-            <button onClick={Booking} className=' text-center bg-rose-600 p-1 text-white rounded-md font-semibold'>Book Appointment</button>
+            <button onClick={Booking} className=' text-center w-full bg-rose-600 p-1 text-white font-semibold'>Book Appointment</button>
         </div>)
 
 };

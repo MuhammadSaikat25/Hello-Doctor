@@ -7,11 +7,9 @@ const AllUser = () => {
     useEffect(() => {
         axiosSec(`users`)
             .then(res => {
-                const data = res.data
                 setUser(res.data)
             })
     }, [])
-
 
     const updateRole = (user) => {
 
@@ -37,14 +35,13 @@ const AllUser = () => {
                     <tr className='w-[50%]'>
                         <td>{i + 1}</td>
                         <td>{item.name}</td>
-                        <td>{item.email}</td>
+                        <td >{item.email}</td>
                         <td onClick={() => updateRole(item)}>{item.role === 'admin' ? "admin" : <button>user</button>}</td>
                         <td>
                             <button className='bg-orange-500 p-1 text-white rounded'>Delete</button>
                         </td>
                     </tr>
                 </table>)
-
 
             }
         </div>

@@ -11,7 +11,7 @@ const PrivateRoute = ({children}) => {
     if(user){
        return children    
     }else{
-        navigate('logIn')
+        navigate('/logIn')
     }
     return (
         <div className=""></div>
