@@ -1,23 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { FaChevronDown, FaTimes } from "react-icons/fa";
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../Component/FireBase/AuthProvider';
-import AxiosSecure from '../Utils/axiosSecure';
 
 
 const Nav = () => {
     const [open, setOpen] = useState(false)
     const { LogOut, user } = useContext(AuthContext)
-    const [admin, setAdmin] = useState('')
-
-    const axiosSec = AxiosSecure()
-    useEffect(() => {
-        axiosSec.get(`user/${user?.email}`)
-            .then(res => {
-                const data = res.data
-                setAdmin(data)
-            })
-    })
 
     const logOut = () => {
         LogOut()
@@ -35,7 +24,10 @@ const Nav = () => {
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/about'}>About</NavLink>
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/Appointment'}>Appointment</NavLink>
                     {
-                        admin.role === 'admin' && <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/profile'}>Admin Profile</NavLink>
+                        user && <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/profile'}>DashBoard</NavLink>
+                    }
+                    {
+
                     }
                     <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/SingUp'}>Sing up</NavLink>
                     {
@@ -44,7 +36,8 @@ const Nav = () => {
                     }
 
                 </div>
-                {/* mobile navbar */}
+
+                {/* ==================mobile navbar================== */}
                 <div className="lg:hidden">
                     {
                         <span onClick={() => setOpen(!open)}>

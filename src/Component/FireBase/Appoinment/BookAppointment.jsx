@@ -4,9 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const BookAppointment = ({ data }) => {
-    const { user } = useContext(AuthContext)
-
-
+    const { user ,admin} = useContext(AuthContext)
+    console.log(admin)
     const Booking = () => {
 
         const appointment = {
@@ -14,7 +13,8 @@ const BookAppointment = ({ data }) => {
             doctorName: data.name,
             doctorImage: data.image,
             price: data.price,
-            services: data.services
+            services: data.services,
+            patient:user.displayName
         }
         fetch(`${import.meta.env.VITE_SERVER}Patients`, {
             method: "POST",
@@ -41,7 +41,7 @@ const BookAppointment = ({ data }) => {
             <h1>{data.price}</h1>
             <h1 className='font-bold'>{data.services}</h1>
             <hr />
-            <button onClick={Booking} className=' text-center w-full bg-rose-600 p-1 text-white font-semibold'>Book Appointment</button>
+            <button disabled={admin===true} onClick={Booking} className=' text-center w-full bg-rose-600 p-1 text-white font-semibold'>Book Appointment</button>
         </div>)
 
 };

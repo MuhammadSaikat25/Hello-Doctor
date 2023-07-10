@@ -9,7 +9,16 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const auth = getAuth(app)
     const [loading, setLoading] = useState(true)
+    const [admin, setAdmin] = useState('')
 
+    useEffect(() => {
+        fetch(`${import.meta.env.VITE_SERVER}user/admin/${user?.email}`)
+            .then(res => res.json())
+            .then(data=>{
+                setAdmin(data.admin)
+            })
+    }, [user])
+    console.log(admin)
 
     const createUser = (email, password) => {
         setLoading(true)
@@ -52,7 +61,7 @@ const AuthProvider = ({ children }) => {
     })
 
     const authInfo = {
-        createUser, LogIn, LogOut, user, loading, google, update
+        createUser, LogIn, LogOut, user, loading, google, update,admin
     }
     return (
         <AuthContext.Provider value={authInfo}>

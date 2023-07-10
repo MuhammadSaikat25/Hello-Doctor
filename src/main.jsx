@@ -22,6 +22,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import MyBooking from './Pages/ProfilePage/MyBooking';
 const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: 'manageUser',
         element: <ManageUser></ManageUser>
+      },
+      {
+        path: 'myBooking',
+        element: <MyBooking></MyBooking>
       }
     ]
   }
