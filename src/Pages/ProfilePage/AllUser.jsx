@@ -19,31 +19,40 @@ const AllUser = () => {
             .then(res => res.json())
             .then(data => console.log(data))
     }
-    
+
+    const deleteUser=(id)=>{
+       fetch(`${import.meta.env.VITE_SERVER}delete/user/${id}`,{
+        method:"DELETE"
+       })
+       .then(res=>res.json())
+       .then(data=>console.log(data))
+    }
+
     return (
-        <div className='mt-10 '>
-            {
-                user.map((item, i) => <table className='bg-rose-600 text-white mx-auto text-left w-[50%]  rounded my-auto' key={item._id}>
-                    <tr>
-                        <th></th>
-                        <th>NAME</th>
-                        <th>EMAIL</th>
-                        <th>ROLE</th>
-                        <th>Remove</th>
-                    </tr>
+        <div className='mt-10'>
 
-                    <tr className='w-[50%]'>
-                        <td>{i + 1}</td>
-                        <td>{item.name}</td>
-                        <td >{item.email}</td>
-                        <td onClick={() => updateRole(item)}>{item.role === 'admin' ? "admin" : <button>user</button>}</td>
-                        <td>
-                            <button className='bg-orange-500 p-1 text-white rounded'>Delete</button>
-                        </td>
-                    </tr>
-                </table>)
-
-            }
+            <table className=' lg:w-[800px] lg:h-[200px] mt-10 mx-auto '>
+                <tr className='text-left bg-slate-600 text-yellow-50'>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Delete</th>
+                </tr>
+                {user.map((item, i) => {
+                    return (
+                        <tr className='border-t-2 border-gray-950 ' key={i}>
+                            <td>{i + 1}</td>
+                            <td>{item.name}</td>
+                            <td >{item.email}</td>
+                            <td onClick={() => updateRole(item)}>{item.role === 'admin' ? "admin" : <button>user</button>}</td>
+                            <td>
+                                <button onClick={()=>deleteUser(item._id)} className='bg-orange-500 p-1 text-white rounded'>Delete</button>
+                            </td>
+                        </tr>
+                    )
+                })}
+            </table>
         </div>
     );
 };
