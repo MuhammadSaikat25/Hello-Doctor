@@ -1,6 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Component/FireBase/AuthProvider';
 import AxiosSecure from '../../Utils/axiosSecure';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const MyBooking = () => {
     const { user } = useContext(AuthContext)
@@ -10,9 +13,17 @@ const MyBooking = () => {
         axiosSecure.get(`user/appointment/${user?.email}`)
             .then(res => setBooking(res.data))
     }, [user])
-    console.log(booking)
+
+    const handelBooking = (id) => {
+       
+        axiosSecure.delete(`delete/booking/${id}`)
+            .then(res => {
+                toast("Appointment conform!")
+            })
+    }
     return (
         <div>
+            <ToastContainer />
             <table className=' lg:w-[800px] lg:h-[200px] mt-10 mx-auto '>
                 <tr className='text-left bg-slate-600 text-yellow-50'>
                     <th></th>
@@ -28,14 +39,14 @@ const MyBooking = () => {
                     return (
                         <tr className='border-t-2 border-gray-950 ' key={i}>
                             <td>{i + 1}</td>
-                            <td><img className='w-[70px] rounded-full' src={item.doctorImage} alt="" /></td>
+                            <td><img className='w-[70px] h-[70px] object-contain rounded-full' src={item.doctorImage} alt="" /></td>
                             <td>{item.doctorName}</td>
                             <td>{item.services}</td>
-                            <td>{item.patient?item.patient:"Unknown"}</td>
+                            <td>{item.patient ? item.patient : "Unknown"}</td>
                             <td >{item.email}</td>
                             <td>{item.price}</td>
                             <td>
-                                <button onClick={() => deleteUser(item._id)} className='bg-orange-500 p-1 text-white rounded'>Delete</button>
+                                <button onClick={() => handelBooking(item._id)} className='bg-orange-500 p-1 text-white rounded'>Delete</button>
                             </td>
                         </tr>
                     )
@@ -44,11 +55,6 @@ const MyBooking = () => {
         </div>
     );
 };
-// email: user?.email,
-// doctorName: data.name,
-// doctorImage: data.image,
-// price: data.price,
-// services: data.services,
-// patient:user.displayName
+
 
 export default MyBooking;
