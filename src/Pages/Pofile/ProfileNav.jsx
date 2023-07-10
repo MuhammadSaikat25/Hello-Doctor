@@ -6,6 +6,7 @@ import AxiosSecure from '../../Utils/axiosSecure';
 const ProfileNav = () => {
     const { user } = useContext(AuthContext)
     const axiosSec=AxiosSecure()
+    
     const isAdmin = () => {
         axiosSec.get(`user/admin/${user?.email}`)
             .then(res => {

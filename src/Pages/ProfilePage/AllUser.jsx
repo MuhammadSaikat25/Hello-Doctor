@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import AxiosSecure from '../../Utils/axiosSecure';
 
 const AllUser = () => {
+
+    
     const axiosSec = AxiosSecure()
     const [user, setUser] = useState([])
     useEffect(() => {

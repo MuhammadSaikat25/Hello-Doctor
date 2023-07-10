@@ -4,13 +4,15 @@ import React, { useEffect, useState } from 'react';
 import Calendar from 'react-calendar';
 import BookAppointment from './BookAppointment';
 
+
 const Appointment = () => {
+   
+    
     const [value, onChange] = useState(new Date());
     const [service, setServices] = useState([])
     const [doctor, setDoctor] = useState([])
     const [category, setCategory] = useState('')
     const servicesDoctor = doctor.filter(item => item.services == category)
-
     useEffect(() => {
         axios.get(`${import.meta.env.VITE_SERVER}services`)
             .then(res => {
