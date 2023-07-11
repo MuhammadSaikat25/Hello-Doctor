@@ -51,17 +51,20 @@ const Nav = () => {
                 {
                     open && (
                         <div className="lg:hidden flex flex-col text-white py-20">
-                            <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/'}>Home</NavLink>
-                            <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/about'}>About</NavLink>
-                            <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/Appointment'}>Appointment</NavLink>
-                            {
-                                admin.role === 'admin' && <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/profile'}>Admin Profile</NavLink>
-                            }
-                            <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/SingUp'}>Sing up</NavLink>
-                            {
-                                user ? <button onClick={logOut}>log Out</button> : <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/logIn'}>LogIn</NavLink>
+                             <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/'}>Home</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/about'}>About</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/Appointment'}>Appointment</NavLink>
+                    {
+                        user && <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/profile'}>DashBoard</NavLink>
+                    }
+                    {
 
-                            }
+                    }
+                    <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/SingUp'}>Sing up</NavLink>
+                    {
+                        user ? <button onClick={logOut}>log Out</button> : <NavLink className={({ isActive }) => isActive ? 'text-orange-300' : ''} to={'/logIn'}>LogIn</NavLink>
+
+                    }
                         </div>
                     )
                 }
