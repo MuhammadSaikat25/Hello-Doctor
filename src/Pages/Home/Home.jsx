@@ -1,3 +1,4 @@
+import ContactUs from "./ContactUs/ContactUs";
 import MainCompo from "./Main/MainCompo";
 import OurDoctor from "./OurDoctor/OurDoctor";
 import Review from "./Review/Review";
@@ -9,6 +10,7 @@ const Home = () => {
             <MainCompo></MainCompo>
             <Time></Time>
             <OurDoctor></OurDoctor>
+            <ContactUs></ContactUs>
         </div>
     );
 };

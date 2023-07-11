@@ -23,6 +23,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import MyBooking from './Pages/ProfilePage/MyBooking';
+import DoctorDetails from './Pages/Home/DoctorDetails/DoctorDetails';
 const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       {
         path: 'Appointment',
         element: <PrivateRoute><Appointment></Appointment></PrivateRoute>
+      },
+      {
+        path:'doctorDetails/:id',
+        element:<DoctorDetails></DoctorDetails>,
+        loader:({params})=>fetch(`${import.meta.env.VITE_SERVER}getDoctor/${params.id}`)
       }
 
 
@@ -76,6 +82,7 @@ const router = createBrowserRouter([
         path: 'myBooking',
         element: <MyBooking></MyBooking>
       }
+
     ]
   }
 

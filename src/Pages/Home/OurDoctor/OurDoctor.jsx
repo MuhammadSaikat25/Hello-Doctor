@@ -24,7 +24,7 @@ const OurDoctor = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 {
-                    doctor.slice(0, 3).map(doctor => <SingleDoctor key={doctor._id} doctor={doctor}></SingleDoctor>)
+                    doctor.map(doctor => <SingleDoctor key={doctor._id} doctor={doctor}></SingleDoctor>)
                 }
             </div>
         </div>
